@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentaciones de Clase - Estilo Ciberpunk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .masonry {
+            column-count: 1;
+            column-gap: 1rem;
+            margin: 0 auto; /* Centrar el contenedor */
+            max-width: 1200px; /* Ancho máximo del contenedor */
+        }
+        @media (min-width: 640px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+        body {
+            background-color: #0d0d1a; /* Fondo oscuro */
+            color: #e0e0e0; /* Texto claro */
+            font-family: 'Arial', sans-serif;
+        }
+        .masonry-item {
+            background-color: #1a1a2e; /* Fondo de tarjetas oscuro */
+            border: 1px solid #4f46e5; /* Borde neón azul */
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .masonry-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.5); /* Sombra neón azul */
+        }
+        h1, h2 {
+            color: #4f46e5; /* Títulos en neón azul */
+        }
+        a {
+            color: #ec4899; /* Enlaces en rosa neón */
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #f472b6; /* Rosa neón más claro al pasar el mouse */
+        }
+        .text-blue-500 {
+            color: #60a5fa; /* Azul eléctrico */
+        }
+        .text-green-500 {
+            color: #34d399; /* Verde ácido */
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Título principal -->
+        <h1 class="text-4xl font-bold text-center mb-8 text-neon-blue">Presentaciones de Clase</h1>
+
+        <!-- Primer Parcial -->
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-neon-pink">Primer Parcial</h2>
+        <div class="masonry">
+            <!-- Presentación de encuadre -->
+            <div class="masonry-item">
+                <h2 class="text-xl font-semibold mb-4">Presentación de encuadre</h2>
+                <p class="text-gray-400 mb-4">Descripción breve de la presentación de encuadre.</p>
+                <a href="https://marcoc76.github.io/DigitalEpic/encuadre.html?authuser=0" class="text-blue-500 hover:text-blue-400">Ver Presentación</a>
+                <br>
+                <a href="https://marcoc76.github.io/DigitalEpic/encuadre.pdf?authuser=0" class="text-green-500 hover:text-green-400">Descargar PDF</a>
+            </div>
+
+            <!-- Metodologías ágiles -->
+            <div class="masonry-item">
+                <h2 class="text-xl font-semibold mb-4">Metodologías ágiles</h2>
+                <p class="text-gray-400 mb-4">Descripción breve de las metodologías ágiles.</p>
+                <a href="https://marcoc76.github.io/DigitalEpic/agil.html?authuser=0" class="text-blue-500 hover:text-blue-400">Ver Presentación</a>
+                <br>
+                <a href="https://marcoc76.github.io/DigitalEpic/agil.pdf?authuser=0" class="text-green-500 hover:text-green-400">Descargar PDF</a>
+            </div>
+
+            <!-- Presentaciones efectivas -->
+            <div class="masonry-item">
+                <h2 class="text-xl font-semibold mb-4">Presentaciones efectivas</h2>
+                <p class="text-gray-400 mb-4">Descripción breve de las presentaciones efectivas.</p>
+                <a href="https://marcoc76.github.io/DigitalEpic/DocumentosProf.html?authuser=0" class="text-blue-500 hover:text-blue-400">Ver Presentación</a>
+                <br>
+                <a href="https://marcoc76.github.io/DigitalEpic/DocumentosProf.pdf?authuser=0" class="text-green-500 hover:text-green-400">Descargar PDF</a>
+            </div>
+
+            <!-- Sitios web -->
+            <div class="masonry-item">
+                <h2 class="text-xl font-semibold mb-4">Sitios web</h2>
+                <p class="text-gray-400 mb-4">Descripción breve de los sitios web.</p>
+                <a href="https://marcoc76.github.io/DigitalEpic/sitiosWeb.html?authuser=0" class="text-blue-500 hover:text-blue-400">Ver Presentación</a>
+                <br>
+                <a href="https://marcoc76.github.io/DigitalEpic/sitiosWeb.pdf?authuser=0" class="text-green-500 hover:text-green-400">Descargar PDF</a>
+            </div>
+        </div>
+
+        <!-- Segundo Parcial -->
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-neon-pink">Segundo Parcial</h2>
+        <div class="masonry">
+            <!-- Teoría del color -->
+            <div class="masonry-item">
+                <h2 class="text-xl font-semibold mb-4">Teoría del color</h2>
+                <p class="text-gray-400 mb-4">Descripción breve de la teoría del color.</p>
+                <a href="https://marcoc76.github.io/DigitalEpic/teoriaColor.html?authuser=0" class="text-blue-500 hover:text-blue-400">Ver Presentación</a>
+                <br>
+                <a href="https://marcoc76.github.io/DigitalEpic/teoriaColor.pdf?authuser=0" class="text-green-500 hover:text-green-400">Descargar PDF</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
